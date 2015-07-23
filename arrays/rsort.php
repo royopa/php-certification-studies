@@ -1,8 +1,8 @@
 <?php
-// So.. asort sort the array by the values and doesn' destroy the keys.. cool shit!!
+// So.. rsort sort the array in reverse order
 
 $fruits = array("d" => "lemon", "a" => "orange", "b" => "banana", "c" => "apple");
-asort($fruits);
+rsort($fruits);
 foreach ($fruits as $key => $val) {
     echo "$key = $val\n";
 }
@@ -10,10 +10,10 @@ foreach ($fruits as $key => $val) {
 /*
  output:
 
-c = apple
-b = banana
-d = lemon
-a = orange
-
+0 = orange
+1 = lemon
+2 = banana
+3 = apple
 
  */
+
